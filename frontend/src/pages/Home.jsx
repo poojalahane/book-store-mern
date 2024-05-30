@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('https://book-store-mern-api-1.vercel.app//books')
+      .get('https://book-store-mern-api-1.vercel.app/books')
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
