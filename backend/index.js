@@ -28,6 +28,7 @@ app.use(cors())
 
 app.get("/", (request, response) => {
   console.log(request);
+  res.json("Hello");
   return response.status(234).send("Welcome to MERN Stack Tutorial.....");
 });
 
